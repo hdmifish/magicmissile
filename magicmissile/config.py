@@ -58,8 +58,8 @@ class Config():
         try:
             with open('config.mm', r) as fp:
                 self.doc = json.load(fp)
-            except IOError as e:
-                log.err("Could not open config.mm " + str(e))
+        except IOError as e:
+            log.err("Could not open config.mm " + str(e))
 
-            else:
-                return self.doc
+        else:
+            return self.doc

@@ -6,7 +6,7 @@ import os
 
 os.system('')
 
-bot = MagicMissile
+bot = MagicMissile()
 
 try:
     bot.run()
